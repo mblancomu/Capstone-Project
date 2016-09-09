@@ -1,0 +1,2 @@
+"created(DATETIME)","name(STRING(36))","updated(DATETIME)","objectId(STRING_ID)","level(STRING(36))","value(UNKNOWN)","logFormat(STRING(36))","policy(STRING(36))","ownerId(STRING(36))"
+"08/28/2016 17:18:59 GMT+0000","Global logger",null,"F73258EC-A3D0-7E49-FFC6-E5CA6248A500","DEBUG",null,"%d | %c | %5p | %m%n","DATE-BASED",null

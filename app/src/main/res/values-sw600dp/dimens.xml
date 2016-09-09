@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Width of items in list-->
+    <dimen name="width_item_list_main_types">280dp</dimen>
+    <dimen name="imagegrid_height">300dp</dimen>
+
+    <!--Global margins for the container-->
+    <dimen name="margins_horizontal_global">200dp</dimen>
+    <dimen name="margins_vertical_global">8dp</dimen>
+
+    <!--Card header detail dimens-->
+    <dimen name="margins_horizontal_header">12dp</dimen>
+    <dimen name="margins_vertical_header">12dp</dimen>
+
+    <!--LOGIN & REGISTER-->
+    <!--Dimens for the forms in login and register-->
+    <dimen name="marginTop_button">48dp</dimen>
+    <dimen name="margins_horizontal_buttons_form">28dp</dimen>
+    <dimen name="margins_vertical_buttons_form">16dp</dimen>
+
+    <!--ADD TRIPS-->
+    <!--Dimens for the components in Add Trip section-->
+    <dimen name="text_add_submit_button">18sp</dimen>
+    <dimen name="margins_horizontal_button_add_submit">8dp</dimen>
+    <dimen name="margins_horizontal_add_spinners">32dp</dimen>
+    <dimen name="height_description_edit_text">100dp</dimen>
+    <dimen name="margin_between_spinners">10dp</dimen>
+
+    <!--Progress Bar dimens-->
+    <dimen name="width_progressbar">80dp</dimen>
+    <dimen name="height_progressbar">80dp</dimen>
+    <dimen name="marginTop_progressbar">30dp</dimen>
+
+    <dimen name="drawable_padding_global">16dp</dimen>
+    <dimen name="height_views_divider">1dp</dimen>
+
+    <!--Cards view values-->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+
+    <dimen name="height_tab_indicator">3dp</dimen>
+
+    <!--Text for Collapsing component-->
+    <dimen name="text_collapsed_state">20sp</dimen>
+    <dimen name="text_expanded_state">24sp</dimen>
+
+    <dimen name="padding_start_collapsing_layout">16dp</dimen>
+
+    <!--Detail screen dimens-->
+    <dimen name="height_image_view_detail">320dp</dimen>
+    <dimen name="app_bar_height_detail">400dp</dimen>
+    <dimen name="height_card_header_detail">160dp</dimen>
+
+    <dimen name="padding_number_types">2dp</dimen>
+    <dimen name="margin_gral_cards">16dp</dimen>
+    <dimen name="padding_info_bar">8dp</dimen>
+    <dimen name="text_description">16sp</dimen>
+    <dimen name="title_thumbnail">22sp</dimen>
+
+    <!--Text for tabs component-->
+    <dimen name="text_tabs_titles">16sp</dimen>
+
+    <dimen name="marginTop_submit_button">16dp</dimen>
+    <dimen name="text_general">16sp</dimen>
+    <dimen name="title_detail">16sp</dimen>
+
+    <dimen name="marginTop_single_list_tablet">?attr/actionBarSize</dimen>
+
+    <dimen name="margin_botton_splash_image">24dp</dimen>
+
+    <dimen name="margintTop_detail_card_tablet">-72dp</dimen>
+
+    <dimen name="height_false_toolbar">64dp</dimen>
+    <dimen name="appbar_height_detail_tablet">128dp</dimen>
+
+</resources>

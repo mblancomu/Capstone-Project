@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:contentDescription="@string/relative_desc_container_progressbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:contentDescription="@string/linear_desc_container_progressbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_horizontal_margin"
+            android:background="@null"
+            android:contentDescription="@string/imageview_desc_no_info_trip"
+            android:src="@drawable/logo_trip_white"
+            android:layout_above="@+id/progressbar"
+            android:layout_centerHorizontal="true" />
+
+        <com.fenjuly.mylibrary.SpinnerLoader
+            android:id="@+id/progressbar"
+            style="@style/ProgressBarTrip"
+            android:contentDescription="@string/progressbar_desc_glovbal_use"
+            android:visibility="visible"
+            app:point_color="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

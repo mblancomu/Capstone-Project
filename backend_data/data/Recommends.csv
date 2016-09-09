@@ -1,0 +1,1 @@
+"type(STRING(36))","description(STRING(36))","coords(STRING(36))","resource(STRING(36))","idTrip(STRING(36))","created(DATETIME)","objectId(STRING_ID)","phone(STRING(36))","name(STRING(36))","ownerId(STRING(36))","updated(DATETIME)","website(STRING(36))"

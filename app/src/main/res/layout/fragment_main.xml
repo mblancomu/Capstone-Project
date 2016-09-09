@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/relative_desc_container_fragment_main"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:contentDescription="@string/tablayout_desc_main"
+        android:layoutDirection="locale"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:theme="@style/MyCustomTabLayout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout"
+        android:contentDescription="@string/viewpager_desc_main"
+        android:layoutDirection="locale" />
+
+</RelativeLayout>

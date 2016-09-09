@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manuelblanco.capstonestage2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <!-- client -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <!-- Authenticator -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <!-- Sync Adapter -->
+    <uses-permission
+        android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <provider
+            android:name=".providers.TripsProvider"
+            android:authorities="com.manuelblanco.capstonestage2.providers.TripsProvider"
+            android:exported="false">
+        </provider>
+
+        <provider
+            android:name=".providers.TripsSuggestionProvider"
+            android:authorities="com.manuelblanco.capstonestage2.providers.TripsSuggestionProvider"
+            android:exported="false">
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.CountriesActivity"
+            android:label="Countries"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.FollowUsActivity"
+            android:label="@string/title_activity_follow_us"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activities.FavoritesActivity"
+            android:label="@string/item_favorites"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activities.LogInActivity"
+            android:label="@string/item_login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activities.AddTripActivity"
+            android:label="@string/item_addtrip"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activities.DetailActivity"
+            android:label="@string/detail_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+        </activity>
+
+        <activity android:name=".activities.TypesActivity"
+            android:label="@string/activity_types"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver
+            android:name=".widget.TripsWidgetProvider"
+            android:label="@string/widget_trip">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="UPDATE_VIEWS" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/triptop_widget" />
+        </receiver>
+
+        <service android:name=".widget.TripsWidgetProvider$TripsWidgetIntentService" />
+
+        <!-- This service implements our SyncAdapter. It needs to be exported, so that the system
+        sync framework can access it. -->
+        <service android:name=".syncadapter.SyncService"
+            android:exported="true">
+            <!-- This intent filter is required. It allows the system to launch our sync service
+            as needed. -->
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <!-- This points to a required XML file which describes our SyncAdapter. -->
+            <meta-data android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <!-- This implements the account we'll use as an attachment point for our SyncAdapter. Since
+       our SyncAdapter doesn't need to authenticate the current user (it just fetches a public RSS
+       feed), this account's implementation is largely empty.
+
+       It's also possible to attach a SyncAdapter to an existing account provided by another
+       package. In that case, this element could be omitted here. -->
+        <service android:name=".account.GenericAccountService">
+            <!-- Required filter used by the system to launch our account service. -->
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <!-- This points to an XMLf ile which describes our account service. -->
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

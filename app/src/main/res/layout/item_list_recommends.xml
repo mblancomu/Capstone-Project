@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewItemList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/linear_desc_item_recommend"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/view_horizontal_margin"
+            android:contentDescription="@string/textview_desc_title_item_recommend"
+            android:textColor="@color/colorPrimary_text"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/view_horizontal_margin"
+            android:textDirection="locale"
+            android:textSize="@dimen/title_detail"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_description_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/textview_desc_description_item_recommend"
+            android:paddingBottom="@dimen/view_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorPrimary_text"
+            android:textDirection="locale"
+            android:textSize="@dimen/text_general" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_horizontal_margin"
+            android:contentDescription="@string/linear_desc_container_buttons_item_recommend"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:padding="@dimen/view_horizontal_margin">
+
+            <ImageButton
+                android:id="@+id/ib_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/imagebutton_desc_phone_item_recommend"
+                android:src="@drawable/ic_recommend_phone" />
+
+            <ImageButton
+                android:id="@+id/ib_website"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/imagebutton_desc_web_item_recommend"
+                android:src="@drawable/ic_recommend_website" />
+
+            <ImageButton
+                android:id="@+id/ib_position"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/imagebutton_desc_position_item_recommend"
+                android:src="@drawable/ic_recommend_position" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_views_divider"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/view_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/view_desc_divider"></View>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

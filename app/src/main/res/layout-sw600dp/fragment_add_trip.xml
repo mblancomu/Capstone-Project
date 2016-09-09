@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="@dimen/margins_vertical_global"
+    android:layout_marginEnd="@dimen/margins_horizontal_global"
+    android:layout_marginStart="@dimen/margins_horizontal_global"
+    android:layout_marginTop="@dimen/margins_vertical_global"
+    android:contentDescription="@string/linear_desc_add"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/scroll_desc_add">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/linear_desc_add_cards"
+            android:orientation="vertical">
+
+            <include layout="@layout/card_info_gral_addtrip"></include>
+
+            <include layout="@layout/card_recommends_addtrip"></include>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/TextViewSubmitTrip"
+        android:textDirection="locale"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/button_desc_add_submit"
+        android:text="@string/submit_trip" />
+
+</LinearLayout>

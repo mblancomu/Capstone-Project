@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginEnd="@dimen/margins_horizontal_global"
+    android:layout_marginStart="@dimen/margins_horizontal_global"
+    android:background="@color/colorPrimary"
+    android:contentDescription="@string/linear_desc_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margins_vertical_global"
+        android:layout_marginTop="@dimen/margins_vertical_global"
+        android:contentDescription="@string/scroll_desc_login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/linear_desc_login_form"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/EditTextForm"
+                android:contentDescription="@string/edit_text_desc_username"
+                android:hint="@string/label_email"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/et_password" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/EditTextForm"
+                android:contentDescription="@string/edit_text_desc_password"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/ButtonsForm"
+                android:textDirection="locale"
+                android:contentDescription="@string/button_desc_login"
+                android:text="@string/btn_login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_vertical_margin"
+                android:layout_marginTop="@dimen/margins_horizontal_buttons_form"
+                android:contentDescription="@string/linear_desc_login_divider_social"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layoutDirection="locale"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/margins_horizontal_buttons_form"
+                    android:layout_marginStart="@dimen/margins_horizontal_buttons_form"
+                    android:layout_weight="0.45"
+                    android:background="@color/color_view_divider_form"
+                    android:contentDescription="@string/view_desc_divider" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/textview_desc_login_circle"
+                    android:gravity="center_horizontal"
+                    android:text="@string/divider_or"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/margins_horizontal_buttons_form"
+                    android:layout_marginStart="@dimen/margins_horizontal_buttons_form"
+                    android:layout_weight="0.45"
+                    android:background="@color/color_view_divider_form"
+                    android:contentDescription="@string/view_desc_divider" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/loginFacebookButton"
+                style="@style/ButtonsFormSocial"
+                android:contentDescription="@string/button_desc_login_facebook"
+                android:drawableStart="@drawable/ic_facebook_logo"
+                android:text="@string/button_login_facebook" />
+
+            <Button
+                android:id="@+id/loginTwitterButton"
+                style="@style/ButtonsFormSocial"
+                android:contentDescription="@string/button_desc_login_twitter"
+                android:drawableStart="@drawable/ic_twitter"
+                android:text="@string/button_login_twitter" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_button"
+                android:contentDescription="@string/relative_desc_login">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/textview_desc_suggest_register"
+                    android:text="@string/tv_register"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

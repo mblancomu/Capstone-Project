@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_coordinator"
+    android:background="@color/colorPrimary"
+    android:contentDescription="@string/coordinator_desc_login"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/appbar_desc_login"
+        android:overScrollMode="always"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:contentDescription="@string/toolbar_desc_main"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/container_main"></include>
+
+    <View
+        android:id="@+id/back_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/view_desc_back_progress"
+        android:visibility="gone"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/relative_desc_container_progressbar">
+
+        <com.fenjuly.mylibrary.SpinnerLoader
+            android:id="@+id/progressbar"
+            style="@style/ProgressBarTrip"
+            android:contentDescription="@string/progressbar_desc_glovbal_use"
+            android:visibility="gone"
+            app:point_color="@color/colorAccent" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="regions">
+        <item>Africa</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Europe</item>
+        <item>Asia</item>
+        <item>Antarctica</item>
+        <item>Oceania</item>
+        <item>Caribbean and Central America</item>
+    </string-array>
+
+    <string-array name="types_sleep">
+        <item>Hotel</item>
+        <item>Motel</item>
+        <item>Lodgings</item>
+        <item>Hostel</item>
+        <item>Country House</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="types_eat">
+        <item>Restaurant</item>
+        <item>Take Away</item>
+        <item>Fast Food</item>
+        <item>Bar</item>
+        <item>Peddler</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="trips_types">
+        <item>Cultural</item>
+        <item>Diversion</item>
+        <item>Nature</item>
+        <item>Rural</item>
+        <item>Health</item>
+        <item>Wine</item>
+        <item>Religion</item>
+        <item>Gastronomic</item>
+        <item>Beach</item>
+        <item>Mountain</item>
+        <item>Routes</item>
+    </string-array>
+
+</resources>

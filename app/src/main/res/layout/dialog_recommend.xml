@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layoutDirection="locale"
+    android:contentDescription="@string/linear_desc_dialog_recommend"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="@dimen/view_horizontal_margin"
+        android:id="@+id/country_card"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_recommend"
+        android:textDirection="locale"
+        android:contentDescription="@string/textview_desc_title_dialog_recommend"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_thumbnail"
+        android:gravity="start|center_vertical" />
+
+    <ScrollView android:layout_height="match_parent" android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/scroll_desc_dialog_recommend"
+        android:layout_weight="1">
+
+        <LinearLayout android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/view_horizontal_margin"
+            android:layout_marginTop="@dimen/view_horizontal_margin"
+            android:layoutDirection="locale"
+            android:contentDescription="@string/linear_desc_form_dialog_recommend"
+            android:layout_height="match_parent">
+
+            <EditText
+                style="@style/EditTextForm"
+                android:textDirection="locale"
+                android:contentDescription="@string/edit_text_desc_title_dialog_recommend"
+                android:hint="@string/add_title"
+                android:nextFocusDown="@+id/sp_add_recommend_type"
+                android:id="@+id/et_add_recommend_title"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:layout_marginEnd="@dimen/margins_horizontal_buttons_form"
+                android:layout_marginStart="@dimen/margins_horizontal_buttons_form"
+                android:layout_marginTop="@dimen/margins_vertical_buttons_form"
+                android:layout_marginBottom="@dimen/margins_vertical_buttons_form"
+                android:contentDescription="@string/spinner_desc_type_dialog_recommend"
+                android:nextFocusDown="@+id/et_add_recommend_description"
+                android:id="@+id/sp_add_recommend_type"></Spinner>
+
+            <EditText
+                style="@style/EditTextDescription"
+                android:textDirection="locale"
+                android:contentDescription="@string/edit_text_desc_description_dialog_recommend"
+                android:nextFocusDown="@+id/et_add_recommend_phone"
+                android:hint="@string/add_description"
+                android:id="@+id/et_add_recommend_description"/>
+
+            <EditText
+                style="@style/EditTextForm"
+                android:nextFocusUp="@+id/et_add_recommend_website"
+                android:textDirection="locale"
+                android:contentDescription="@string/edit_text_desc_phone_dialog_recommend"
+                android:inputType="number"
+                android:hint="@string/add_phone"
+                android:id="@+id/et_add_recommend_phone"/>
+
+            <EditText
+                style="@style/EditTextForm"
+                android:nextFocusDown="@+id/tv_add_position"
+                android:textDirection="locale"
+                android:inputType="textWebEditText"
+                android:contentDescription="@string/edit_text_desc_website_dialog_recommend"
+                android:hint="@string/add_website"
+                android:id="@+id/et_add_recommend_website"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_horizontal_margin"
+                android:padding="@dimen/view_horizontal_margin"
+                android:layoutDirection="locale"
+                android:contentDescription="@string/linear_desc_buttons_dialog_recommend"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_add_position"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary_text"
+                    android:text="@string/add_new_position"
+                    android:gravity="center"
+                    android:textDirection="locale"
+                    android:nextFocusDown="@+id/tv_add_recommend"
+                    android:drawableTop="@drawable/ic_item_add_position"
+                    android:contentDescription="@string/textview_desc_add_position_dialog_recommend"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_add_recommend"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary_text"
+                    android:text="@string/save_add_other"
+                    android:gravity="center"
+                    android:contentDescription="@string/textview_desc_add_save_dialog_recommend"
+                    android:nextFocusDown="@+id/tv_clear"
+                    android:textDirection="locale"
+                    android:drawableTop="@drawable/ic_item_clear_recommend"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_clear"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary_text"
+                    android:text="@string/clear_recommend"
+                    android:gravity="center"
+                    android:textDirection="locale"
+                    android:drawableTop="@drawable/ic_item_add_recommend"
+
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

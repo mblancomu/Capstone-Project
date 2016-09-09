@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    style="@style/CardViewItemList"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/card_view_desc_item_countries">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/relative_desc_container_item_countries"
+        android:paddingTop="@dimen/view_horizontal_margin"
+        android:paddingEnd="@dimen/view_horizontal_margin"
+        android:paddingStart="@dimen/view_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_flag_countries"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margins_flag_countries"
+            android:layout_marginStart="@dimen/margins_flag_countries"
+            android:contentDescription="@string/imageview_desc_flag_item_countries"
+            android:src="@drawable/es" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_marginTop="@dimen/view_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/view_desc_divider"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/view_horizontal_margin"
+            android:contentDescription="@string/linear_desc_base_countries_item"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_flag"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="España"
+                android:contentDescription="@string/textview_desc_title_item_countries"
+                android:textColor="@android:color/black"
+                android:textDirection="locale"
+                android:textSize="@dimen/title_thumbnail"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/iv_flag" />
+
+            <TextView
+                android:id="@+id/tv_number_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56 Trips"
+                android:contentDescription="@string/textview_desc_subtitle_item_countries"
+                android:textColor="@color/color_light_grey"
+                android:textDirection="locale"
+                android:layout_marginBottom="@dimen/padding_info_bar"
+                android:textSize="@dimen/text_general"
+                android:layout_below="@+id/tv_country"
+                android:layout_toRightOf="@+id/iv_flag" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

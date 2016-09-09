@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="CardViewItemList" parent="CardView">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardMaxElevation">0dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/imagegrid_height</item>
+        <item name="android:padding">@dimen/margin_gral_cards</item>
+    </style>
+
+</resources>

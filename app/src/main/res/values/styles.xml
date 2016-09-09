@@ -1,0 +1,229 @@
+<resources xmlns:card_view="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorIcons</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="autoCompleteTextViewStyle">@style/myAutoCompleteTextViewStyle</item>
+        <item name="textAppearanceSearchResultTitle">@style/mySearchResult</item>
+
+        <!-- SearchView attributes -->
+        <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
+        <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text</item>
+        <item name="textAppearanceSearchResultSubtitle">
+            @style/TextAppearance.AppCompat.SearchResult.Subtitle
+        </item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_expanded_state</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">@dimen/padding_start_collapsing_layout</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_collapsed_state</item>
+        <item name="android:textColor">@color/colorIcons</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ExpandedAppBarPlus1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_expanded_state</item>
+        <item name="android:paddingStart">@dimen/padding_start_collapsing_layout</item>
+        <item name="android:textColor">@color/colorIcons</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedAppBarPlus1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_collapsed_state</item>
+        <item name="android:textColor">@color/colorIcons</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TransparentProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">@dimen/height_tab_indicator</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_tabs_titles</item>
+        <item name="android:textColor">@color/colorIcons</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimaryLight</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="myAutoCompleteTextViewStyle" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="mySearchResult" parent="TextAppearance.AppCompat.SearchResult.Title">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CardViewItemList" parent="CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardMaxElevation">@dimen/card_elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/imagegrid_height</item>
+        <item name="android:padding">@dimen/margin_gral_cards</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <style name="CardViewMarker" parent="CardViewItemList">
+        <item name="android:layout_width">@dimen/width_card_marker</item>
+        <item name="android:layout_height">@dimen/height_card_marker</item>
+    </style>
+
+    <style name="CardViewDetailTablet" parent="CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardMaxElevation">@dimen/card_elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:padding">@dimen/padding_info_bar</item>
+        <item name="android:layout_marginStart">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginBottom">-40dp</item>
+    </style>
+
+    <style name="ButtonsForm" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_marginStart">@dimen/margins_horizontal_buttons_form</item>
+        <item name="android:layout_marginEnd">@dimen/margins_horizontal_buttons_form</item>
+        <item name="android:layout_marginTop">@dimen/margins_vertical_buttons_form</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textDirection">locale</item>
+
+    </style>
+
+    <style name="ButtonsFormSocial" parent="ButtonsForm">
+        <item name="android:paddingStart">@dimen/view_horizontal_margin</item>
+        <item name="android:ems">12</item>
+    </style>
+
+    <style name="EditTextForm" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_marginStart">@dimen/margins_horizontal_buttons_form</item>
+        <item name="android:layout_marginEnd">@dimen/margins_horizontal_buttons_form</item>
+        <item name="android:layout_marginTop">@dimen/margins_vertical_buttons_form</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/color_light_grey</item>
+        <item name="android:ems">10</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="TextViewSubmitTrip" parent="Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:textSize">@dimen/text_add_submit_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/marginTop_submit_button</item>
+        <item name="android:layout_marginBottom">@dimen/marginTop_submit_button</item>
+        <item name="android:layout_marginEnd">@dimen/margins_horizontal_button_add_submit</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <style name="TextSectionsAddTrip" parent="Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary_text</item>
+        <item name="android:textSize">@dimen/text_add_submit_button</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:padding">@dimen/view_horizontal_margin</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="DividerSections" parent="Theme.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_views_divider</item>
+        <item name="android:textColor">@color/colorPrimary_text</item>
+        <item name="android:textSize">@dimen/text_add_submit_button</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/view_horizontal_margin</item>
+    </style>
+
+    <style name="EditTextDescription" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_description_edit_text</item>
+        <item name="android:layout_marginStart">@dimen/margins_horizontal_button_add_submit</item>
+        <item name="android:layout_marginEnd">@dimen/margins_horizontal_button_add_submit</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColorHint">@color/color_light_grey</item>
+    </style>
+
+    <style name="ProgressBarTrip" parent="Theme.AppCompat">
+        <item name="android:layout_width">@dimen/width_progressbar</item>
+        <item name="android:layout_height">@dimen/height_progressbar</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/marginTop_progressbar</item>
+        <item name="android:foregroundGravity">center</item>
+    </style>
+
+    <style name="TextViewInfoDialogs" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/margins_horizontal_buttons_form</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimary_text</item>
+        <item name="android:textSize">@dimen/title_detail</item>
+    </style>
+
+</resources>

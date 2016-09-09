@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:contentDescription="@string/coordinator_desc_main_tablet"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height_detail_tablet"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/appbar_desc_main_tablet"
+        android:overScrollMode="always"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="locale"
+            android:contentDescription="@string/linear_desc_base_toolbar_tablet"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/marginTop_toolbar_tablet"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:layout_weight="@integer/list_fragment_weight"
+                android:contentDescription="@string/toolbar_desc_main_tablet"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <View
+                android:layout_width="0dp"
+                android:contentDescription="@string/view_desc_toolbar_tablet"
+                android:layout_weight="@integer/detail_fragment_weight"
+                android:layout_height="wrap_content"></View>
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:contentDescription="@string/linear_desc_main_tablet"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:elevation="@dimen/card_detail_tablet_elevation"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/margintTop_detail_card_tablet"
+        app:behavior_overlapTop="@dimen/overlaptop_value"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="@integer/list_fragment_weight"
+            android:contentDescription="@string/linear_desc_container_main_tablet"
+            android:layout_marginTop="@dimen/view_horizontal_margin"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/view_false_toolbar"
+                android:contentDescription="@string/view_desc_container_main_tablet"
+                android:layout_height="@dimen/height_false_toolbar"></View>
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/frame_desc_main_tablet"></FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:contentDescription="@string/linear_base_detail_fragment_tablet"
+            android:layout_width="0dp"
+            android:background="@drawable/bg_detail_tablet_card"
+            android:layout_marginStart="@dimen/view_horizontal_margin"
+            android:layout_marginEnd="@dimen/view_horizontal_margin"
+            android:layout_weight="@integer/detail_fragment_weight"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/container_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/padding_number_types"
+                android:contentDescription="@string/frame_desc_detail_tablet" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

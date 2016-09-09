@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewItemList"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/card_view_add_trip_recommends">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/linear_desc_add_card_recommends"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextSectionsAddTrip"
+            android:contentDescription="@string/textview_desc_add_section_recommends"
+            android:text="@string/recommends" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/linear_desc_add_content_buttons_recommends"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/ib_sleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/textview_desc_button_sleep"
+                android:drawableTop="@drawable/ic_item_add_sleep"
+                android:gravity="center"
+                android:nextFocusRight="@+id/ib_eat"
+                android:text="@string/where_sleep"
+                android:textColor="@color/colorPrimary_text"
+                android:textDirection="locale" />
+
+            <TextView
+                android:id="@+id/ib_eat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/textview_desc_button_eat"
+                android:drawableTop="@drawable/ic_item_add_eat"
+                android:gravity="center"
+                android:nextFocusDown="@+id/btn_submit"
+                android:text="@string/where_eat"
+                android:textColor="@color/colorPrimary_text"
+                android:textDirection="locale" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

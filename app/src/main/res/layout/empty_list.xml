@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:contentDescription="@string/textview_desc_empty"
+    android:text="@string/empty_list"
+    android:textColor="@color/colorPrimary_text"
+    android:textDirection="locale"
+    android:visibility="gone" />

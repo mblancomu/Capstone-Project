@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!--   <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorPrimaryLight">#C8E6C9</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="back_progress_login">#604CAF50</color>
+
+    <!--<color name="colorPrimaryLight">#FF4081</color>-->
+    <color name="colorPrimary_text">#212121</color>
+    <color name="colorSecondary_text">#727272</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="color_divider">#B6B6B6</color>
+    <color name="color_light_grey">#C0C0C0</color>
+    <color name="black_trans">#BB000000</color>
+    <color name="black_trans_2">#70000000</color>
+    <color name="black_trans_3">#40000000</color>
+    <color name="header_detail">#AA3F51B5</color>
+
+   <!--Colors for type of tourism-->
+   <color name="color_religion">#9C27B0</color>
+   <color name="color_beach">#2196F3</color>
+   <color name="color_mountain">#795548</color>
+   <color name="color_wine">#641B30</color>
+   <color name="color_rural">#1B5E20</color>
+   <color name="color_nature">#64DD17</color>
+   <color name="color_diversion">#F44336</color>
+   <color name="color_cultural">#FFFF00</color>
+   <color name="color_health">#FFFFFF</color>
+   <color name="color_routes">#006064</color>
+   <color name="color_gastronomic">#FF5722</color>
+
+    <color name="s1">#ffab91</color>
+    <color name="s2">#ff8a65</color>
+    <color name="s3">#ff7043</color>
+    <color name="s4">#FF5722</color>
+
+    <!--LOGIN & REGISTER-->
+    <color name="color_view_divider_form">#c0c0c0</color>
+
+</resources>

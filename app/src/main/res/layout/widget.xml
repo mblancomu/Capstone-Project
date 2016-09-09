@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:contentDescription="@string/frame_desc_colletion_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textDirection="locale"
+        android:contentDescription="@string/textview_desc_title_collection_widget"
+        android:background="@color/colorAccent"
+        android:text="@string/new_trips_widget"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_widget"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/recycler_desc_collection_widget"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/empty_list"></include>
+</FrameLayout>

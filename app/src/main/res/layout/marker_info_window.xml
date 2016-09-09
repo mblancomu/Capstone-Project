@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    style="@style/CardViewMarker"
+    android:contentDescription="@string/card_view_desc_marker">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/height_views_divider"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/frame_desc_marker">
+
+        <ImageView
+            android:id="@+id/thumbnail_trip"
+            android:layout_width="@dimen/width_card_marker"
+            android:layout_height="@dimen/height_card_marker"
+            android:contentDescription="@string/imageview_desc_iamge_marker"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tol_countries"
+            android:transitionName="@string/transition_grid_to_detail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/black_trans"
+            android:contentDescription="@string/linear_desc_base_marker"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_number_types">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/linear_desc_title_marker"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/padding_info_bar">
+
+                <TextView
+                    android:id="@+id/title_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/textview_desc_title_marker"
+                    android:drawableEnd="@drawable/es"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:text="Cuenca"
+                    android:textColor="@android:color/white"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/title_thumbnail" />
+
+                <TextView
+                    android:id="@+id/description_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/textview_desc_description_marker"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_light_grey"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/text_description" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/padding_info_bar"
+                android:layout_marginStart="@dimen/padding_info_bar"
+                android:contentDescription="@string/linear_desc_votes_marker"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/favorites_icon"
+                    android:layout_width="@dimen/size_icon_flag_grid"
+                    android:layout_height="@dimen/size_icon_flag_grid"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/imageview_desc_icon_fav_marker"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/votes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:contentDescription="@string/textview_desc_votes_marker"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/votes_thumbnail" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

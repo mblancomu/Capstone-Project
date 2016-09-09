@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:contentDescription="@string/linear_desc_dialog_info"
+    android:gravity="center"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_info_dialog"
+        style="@style/TextViewInfoDialogs"
+        android:contentDescription="@string/textview_desc_dialog_info"
+        android:text="@string/login_message"
+        android:textDirection="locale" />
+
+</LinearLayout>

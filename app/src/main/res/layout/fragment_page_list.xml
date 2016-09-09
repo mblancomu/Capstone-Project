@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:contentDescription="@string/frame_desc_page_list">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/swipe_desc_page_list">
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recycler_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/view_horizontal_margin"
+            android:layout_marginStart="@dimen/view_horizontal_margin"
+            android:contentDescription="@string/recycler_desc_page_list">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/empty_list"></include>
+
+    <View
+        android:id="@+id/back_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/view_desc_back_progress"
+        android:visibility="gone"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/relative_desc_container_progressbar">
+
+        <com.fenjuly.mylibrary.SpinnerLoader
+            android:id="@+id/progressbar"
+            style="@style/ProgressBarTrip"
+            android:contentDescription="@string/progressbar_desc_glovbal_use"
+            android:visibility="gone"
+            app:point_color="@color/colorAccent" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,143 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">12dp</dimen>
+
+    <!--Text size on Thumbnail grid-->
+    <dimen name="title_thumbnail">20sp</dimen>
+    <dimen name="votes_thumbnail">14sp</dimen>
+    <dimen name="description_thumbnail">12sp</dimen>
+
+    <!--Text size on Detail screen-->
+    <dimen name="title_detail">14sp</dimen>
+    <dimen name="title_synopsis">14sp</dimen>
+    <dimen name="text_description">10sp</dimen>
+    <dimen name="text_person">14sp</dimen>
+    <dimen name="text_general">12sp</dimen>
+
+    <!--Text for tabs component-->
+    <dimen name="text_tabs_titles">12sp</dimen>
+
+    <!--Text for Collapsing component-->
+    <dimen name="text_collapsed_state">16sp</dimen>
+    <dimen name="text_expanded_state">24sp</dimen>
+
+    <!--Text for the icons on header collapse detail-->
+    <dimen name="icon_detail_text">11sp</dimen>
+
+    <dimen name="margin_top_card_header">-35dp</dimen>
+    <dimen name="margin_icons_genres">6dp</dimen>
+
+    <dimen name="app_layoutbar_height">250dp</dimen>
+    <dimen name="margin_gral_cards">6dp</dimen>
+    <dimen name="margin_fab">8dp</dimen>
+    <dimen name="size_icon_flag_grid">16dp</dimen>
+
+    <!--ImageView size for differents device grid initial-->
+    <dimen name="imagegrid_width">180dp</dimen>
+    <dimen name="imagegrid_height">200dp</dimen>
+
+    <!--ImageView size for differents device scroll persons on detail-->
+    <dimen name="imageperson_width">120dp</dimen>
+    <dimen name="imageperson_height">160dp</dimen>
+
+    <!--Thumbnail size-->
+    <dimen name="thumb_detail_width">180dp</dimen>
+    <dimen name="thumb_detail_height">270dp</dimen>
+
+    <!--Header Collapsing View Detail-->
+    <dimen name="margin_top_header_detail">25dp</dimen>
+
+    <!--Info bar in item detail-->
+    <dimen name="height_info_bar">54dp</dimen>
+    <dimen name="padding_info_bar">4dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="header_margin">64dp</dimen>
+    <dimen name="view_horizontal_margin">8dp</dimen>
+    <dimen name="view_vertical_margin">8dp</dimen>
+
+    <dimen name="marginTop_button">48dp</dimen>
+
+    <!--Detail view-->
+    <dimen name="app_bar_height_detail">380dp</dimen>
+    <dimen name="height_card_header_detail">140dp</dimen>
+
+    <!--Width of items in list-->
+    <dimen name="width_item_list_main_types">300dp</dimen>
+
+    <!--Global margins for the container-->
+    <dimen name="margins_horizontal_global">0dp</dimen>
+    <dimen name="margins_vertical_global">0dp</dimen>
+
+    <!--Card header detail dimens-->
+    <dimen name="margins_horizontal_header">0dp</dimen>
+    <dimen name="margins_vertical_header">0dp</dimen>
+
+    <!--LOGIN & REGISTER-->
+    <!--Dimens for the components on forms login and register-->
+    <dimen name="margins_horizontal_buttons_form">24dp</dimen>
+    <dimen name="margins_vertical_buttons_form">16dp</dimen>
+
+    <!--ADD TRIPS-->
+    <!--Dimens for the components in Add Trip section-->
+    <dimen name="text_add_submit_button">14sp</dimen>
+    <dimen name="margins_horizontal_button_add_submit">16dp</dimen>
+    <dimen name="margins_horizontal_add_spinners">24dp</dimen>
+    <dimen name="height_description_edit_text">80dp</dimen>
+    <dimen name="margin_between_spinners">4dp</dimen>
+
+    <!--Progress Bar dimens-->
+    <dimen name="width_progressbar">80dp</dimen>
+    <dimen name="height_progressbar">80dp</dimen>
+    <dimen name="marginTop_progressbar">30dp</dimen>
+
+    <dimen name="drawable_padding_global">8dp</dimen>
+    <dimen name="height_views_divider">1dp</dimen>
+
+    <dimen name="padding_number_types">2dp</dimen>
+
+    <!--Cards view values-->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+
+    <dimen name="height_tab_indicator">2dp</dimen>
+    <dimen name="padding_start_collapsing_layout">16dp</dimen>
+
+    <dimen name="height_image_view_detail">280dp</dimen>
+
+    <!--Dimens widget-->
+    <dimen name="width_widget">250dp</dimen>
+    <dimen name="height_widget">200dp</dimen>
+
+    <!--Dimen card custom Marker-->
+    <dimen name="width_card_marker">200dp</dimen>
+    <dimen name="height_card_marker">180dp</dimen>
+
+    <!--OverlapTop and App AppBar for Detail Tablet-->
+    <dimen name="overlaptop_value">64dp</dimen>
+    <dimen name="appbar_height_detail_tablet">128dp</dimen>
+    <dimen name="elevation_detail_screen">6dp</dimen>
+
+    <!--Items Countries-->
+    <dimen name="margins_flag_countries">8dp</dimen>
+    <dimen name="height_flag_countries">48dp</dimen>
+
+    <dimen name="marginTop_submit_button">8dp</dimen>
+    <dimen name="marginTop_toolbar_tablet">16dp</dimen>
+    <dimen name="margintTop_detail_card_tablet">-96dp</dimen>
+    <dimen name="marginTop_fragment_main_tablet">24dp</dimen>
+    <dimen name="card_detail_tablet_elevation">4dp</dimen>
+
+    <dimen name="marginTop_single_list_tablet">0dp</dimen>
+    <dimen name="height_false_toolbar">88dp</dimen>
+
+    <dimen name="margin_botton_splash_image">32dp</dimen>
+
+</resources>

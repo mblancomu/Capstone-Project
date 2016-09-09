@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/coordinator_desc_detail"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height_detail"
+        android:contentDescription="@string/appbar_desc_detail"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/collapsing_toolbar_desc_detail"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="center_vertical"
+            app:expandedTitleMarginEnd="@dimen/margin_gral_cards"
+            app:expandedTitleMarginStart="@dimen/margin_gral_cards"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/image_collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_image_view_detail"
+                android:layout_weight="1"
+                android:contentDescription="@string/imageview_desc_detail"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tol_countries"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+            <include layout="@layout/card_detail_header"></include>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:contentDescription="@string/toolbar_desc_detail"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.manuelblanco.capstonestage2.views.CustomNestedScrollView
+        android:id="@+id/container_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nestedscrool_desc_detail"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/linear_desc_nested_detail"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_detail"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:contentDescription="@string/tablayout_desc_detail"
+                android:layoutDirection="locale"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:tabGravity="fill"
+                app:theme="@style/MyCustomTabLayout" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tablayout_detail"
+                android:contentDescription="@string/viewpager_desc_detail"
+                android:layoutDirection="locale" />
+
+        </LinearLayout>
+    </com.manuelblanco.capstonestage2.views.CustomNestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/fab_desc_detail"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_anchor="@+id/card_header"
+        app:layout_anchorGravity="top|end" />
+
+    <include layout="@layout/no_info_trip"></include>
+</android.support.design.widget.CoordinatorLayout>

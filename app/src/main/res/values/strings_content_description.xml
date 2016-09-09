@@ -1,0 +1,295 @@
+<resources>
+
+    <!--LOGIN AND REGISTER LAYOUTS-->
+    <!--Description for edit text in the different form-->
+    <string name="edit_text_desc_password">Edit Text Form for Password</string>
+    <string name="edit_text_desc_email">Edit Text Form for Email</string>
+    <string name="edit_text_desc_username">Edit Text Form for Username</string>
+    <string name="edit_text_desc_confirm_password">Edit Text Form for Confirm Password</string>
+
+    <!--Description for buttons in the different form-->
+    <string name="button_desc_register">Button Form for Register Users</string>
+    <string name="button_desc_login">Button Form for Login Users</string>
+    <string name="button_desc_login_facebook">Button Form for Register Users with Facebook Account</string>
+    <string name="button_desc_login_twitter">Button Form for Register Users with Twitter Account</string>
+
+    <!--Description for the TextViews in Login Form-->
+    <string name="textview_desc_suggest_register">Text View in Form Login for Suggest to the User the Register if
+    havent account</string>
+    <string name="textview_desc_login_circle">Text View in divider simulate a circle</string>
+
+    <!--Description for Linear Layouts, Relative Layout, Views & Scroll View in login and register-->
+    <string name="linear_desc_register">Linear Layout containing the Register Form</string>
+    <string name="linear_desc_login">Linear Layout containing the Login Form</string>
+    <string name="linear_desc_login_divider_social">Linear Layout that divider the social login from the normal login</string>
+    <string name="linear_desc_login_form">Linear Layout containing the Login Form with the Edit Text and Button</string>
+    <string name="scroll_desc_login">Scroll View containing the Login Form</string>
+    <string name="view_desc_divider">View that divide the social Login Form</string>
+    <string name="relative_desc_login">Relative Layout containing the suggestion for register</string>
+
+    <!--ADD TRIPS-->
+    <!--Description for edit text in the add trips-->
+    <string name="edit_text_desc_add_title">Edit Text Form for title in add trips</string>
+    <string name="edit_text_desc_add_description">Edit Text Form for description in add trips</string>
+
+    <!--Description for buttons in in the add trips-->
+    <string name="button_desc_add_submit">Button for submit the new trip</string>
+
+    <!--Description for the TextViews in the add trips-->
+    <string name="textview_desc_add_section_recommends">Text View with the title section in Add Trip Recommends</string>
+    <string name="textview_desc_add_section_info">Text View with the title section in Add Trip Info</string>
+    <string name="textview_desc_button_camera">Text View button for take photo in Add Trip Info</string>
+    <string name="textview_desc_button_position">Text View button for take position in Add Trip Info</string>
+    <string name="textview_desc_button_types">Text View button for select types in Add Trip Info</string>
+
+    <string name="textview_desc_button_eat">Text View button for recommend where eat in Add Trip</string>
+    <string name="textview_desc_button_sleep">Text View button for recommend where sleep in Add Trip</string>
+
+    <!--Description for Linear Layouts, Relative Layout, Spinners,Views & Scroll View in Add trips-->
+    <string name="linear_desc_add">Linear Layout containing the Add Trip Form</string>
+    <string name="linear_desc_add_cards">Linear Layout containing the Cards with the fields for Add Trips</string>
+    <string name="linear_desc_add_card_info">Linear Layout containing the Cards with the fields for Info Gral</string>
+    <string name="linear_desc_add_spinners">Linear Layout containing the Spinners Country and Region in Info Gral</string>
+    <string name="linear_desc_add_content_buttons_info">Linear Layout containing the buttons in Info section add trips</string>
+    <string name="linear_desc_add_content_buttons_recommends">Linear Layout containing the buttons in Recommend section add trips</string>
+    <string name="linear_desc_add_card_recommends">Linear Layout containing the Cards with the fields for Recommends</string>
+    <string name="spinner_desc_add_country">Spinner for countries in Info section Add Trip</string>
+    <string name="spinner_desc_add_region">Spinner for regions in Info section Add Trip</string>
+    <string name="scroll_desc_add">Scroll View containing the Add Trip Form</string>
+    <string name="view_desc_divider_add">View that divide the sections in add trip</string>
+
+    <!--Description for the Card Views into the Add Trip-->
+    <string name="card_view_add_trip_info_gral">Card View containing the form for Info Gral in Add Trip</string>
+    <string name="card_view_add_trip_recommends">Card View containing the form for Recommends in Add Trip</string>
+
+    <!--GLOBAL COMPONENTS ACTIVITIES AND FRAGMENTS-->
+    <!--Activities containers description-->
+    <string name="frame_desc_activity_detail">Frame Layout Main Container for Detail Activity</string>
+    <string name="frame_desc_main">Frame Layout Main Container for different Fragments/Activity</string>
+    <string name="frame_desc_activity_main_detail">Frame Layout Detail Container for Main Activity in Tablets</string>
+    <string name="drawer_menu_desc">Drawer Menu in Base Activity</string>
+    <string name="navigation_view_desc">Navigation View in Main Activity</string>
+    <string name="coordinator_desc_main">Coordinator Layout Main, used in different activities as base container</string>
+    <string name="appbar_desc_main">AppBar Main used in different layouts as base appbar</string>
+    <string name="toolbar_desc_main">Main Toolbar used in different layouts</string>
+    <string name="view_desc_back_progress">Back View for the Progress Bar used en different views</string>
+    <string name="relative_desc_container_progressbar">Relative Layout Container for the progress bar</string>
+    <string name="progressbar_desc_glovbal_use">Progress Bar Global for all the app from a third part library</string>
+    <string name="coordinator_desc_map">Coordinator Layout in Maps Activity</string>
+    <string name="appbar_desc_maps">AppBar in Maps Activity</string>
+    <string name="coordinator_desc_add_trip">Coordinator Layout in Add Trip Fragment/Activity</string>
+    <string name="appbar_desc_add_trip">AppBar in Add Trip Fragment/Activity</string>
+    <string name="coordinator_desc_follow">Coordinator Layout in Follow Us Fragment/Activity</string>
+    <string name="appbar_desc_follow">AppBar in Follow Us Fragment/Activity</string>
+    <string name="coordinator_desc_login">Coordinator Layout in Login and Register Fragment/Activity</string>
+    <string name="appbar_desc_login">AppBar in Login and Register Fragment/Activity</string>
+
+    <!--DETAIL VIEWS-->
+    <!--Card for the header detail in detail fragment-->
+    <string name="linear_desc_detail_header">Linear Layout Container with relevant info in the header detail fragment</string>
+    <string name="textview_desc_user">TextView with the name of the user for this trip in Detail screen</string>
+    <string name="row_desc_date_and_rate">Table Row with the date of the trip and the rate in Detail Screen</string>
+    <string name="textview_desc_date">Text View containing the date of a trip in Detail Screen</string>
+    <string name="ratingbar_desc_small">Rating Bar Small on card header in Detail Screen</string>
+    <string name="row_desc_types_and_votes">Table Row containing the types of tourism and the votes for this trip in Detail Screen</string>
+    <string name="linear_desc_container_types">Linear LAyout Container with the different types of tourism for this trip in Detail Screen</string>
+    <string name="textview_desc_votes">TextView for the number of votes for this trip in Detail Screen</string>
+
+    <!--Fragment Detail-->
+    <string name="coordinator_desc_detail">Coordinator Layout Container for the Fragment Detail</string>
+    <string name="appbar_desc_detail">AppBar containing the detail screen components in Fragment Detail</string>
+    <string name="collapsing_toolbar_desc_detail">Collapsing toolbar containing the tooalbar and image in Fragmnet Detail</string>
+    <string name="imageview_desc_detail">Image View with the main image in Fragment Detail</string>
+    <string name="toolbar_desc_detail">Toolbar into the collapsing layout in Fragment Detail</string>
+    <string name="nestedscrool_desc_detail">NestedScrollView containing the detail information for the trip in Detail Fragment</string>
+    <string name="linear_desc_nested_detail">Linear Layout containing the tabs and view pager in Fragment Detail</string>
+    <string name="tablayout_desc_detail">TabLayout containing the information for the trip detail in Fragment Detail</string>
+    <string name="viewpager_desc_detail">ViewPager for the information of this trip in Fragment Detail</string>
+    <string name="fab_desc_detail">Floating Button for add to favorites the current trip in Fragment Detail</string>
+    <string name="textview_desc_info_detail">TextView containing the information general for the current trip in Fragment Detail Info</string>
+
+    <!--Fragment Votes-->
+    <string name="frame_desc_votes">Frame Layout Container for Fragment Votes</string>
+    <string name="linear_desc_votes">Linear Layout container for vote the current trip in Fragment Votes</string>
+    <string name="textview_info_votes">TextView containing a message for vote the trip in Fragment Votes</string>
+    <string name="imagebutton_desc_votes">ImageButton for vote the current trip in Fragment Votes</string>
+    <string name="textview_desc_rating_info_votes">TextView containing a message for rating the trip in Fragment Votes</string>
+    <string name="ratingbar_desc_big_votes">RatingBar for vote the current trip in Fragment Votes</string>
+    <string name="linear_desc_voted_votes">Linear Layout containing the voted for the user previously in Fragment Voted</string>
+    <string name="textview_desc_thanks_votes">TextView containing a message of thanks for vote this trip in Fragment Votes</string>
+    <string name="textview_desc_result_votes">TextView with the voting in Fragment Votes</string>
+
+    <!--FOLLOW US-->
+    <!--Fragment Follow Us-->
+    <string name="webview_desc_follow_us">WebView container for show the social network with the app info in Fragment Follow Us</string>
+
+    <!--DIALOGS -->
+    <!--Dialog Info Gral-->
+    <string name="linear_desc_dialog_info">Linear Layout containing the info in textview for the dialog Info for Login</string>
+    <string name="textview_desc_dialog_info">TextView containing the info in the Dialog Info for Login</string>
+
+    <!--Dialog Map-->
+    <string name="linear_desc_dialog_map">Linear Layout containing a list of trips near of user in Dialog Map</string>
+    <string name="textview_desc_title_dialog_map">TextView containing the title in Dialog Map</string>
+    <string name="textview_desc_description_dialog_map">TextView containing a message in Dialog Map</string>
+    <string name="recycler_desc_dialog_map">Recycler View containing a list of trips near of user in Dialog Map</string>
+
+    <!--Dialog Photo-->
+    <string name="linear_desc_dialog_photo">Linear Layout containing the buttons for take or get from gallery a photo in Dialog Photo</string>
+    <string name="textview_desc_camera_dialog_photo">TextView for take a Photo with the camera in Dialog Photo</string>
+    <string name="textview_desc_gallery_dialog_photo">TextView for take a Photo from Gallery in Dialog Photo</string>
+    <string name="textview_desc_title_dialog_photo">Text View for the title in Dialog Photo</string>
+
+    <!--Dialog Position-->
+    <string name="card_desc_dialog_position">Card View containing the Dialog Position</string>
+    <string name="linear_desc_dialog_position">Linear Layout containing the autocomplete and map for get position in Dialog Position</string>
+    <string name="textview_desc_info_dialog_position">Text View containing a message for get the position in Dialog Position</string>
+    <string name="textview_desc_title_dialog_position">Text View for the title in Dialog Position</string>
+
+    <!--Dialog Recommend-->
+    <string name="linear_desc_dialog_recommend">Linear Layout Container for the form of Recommend</string>
+    <string name="linear_desc_form_dialog_recommend">Linear Layout containing the different components for the form in Dialog Recommend</string>
+    <string name="linear_desc_buttons_dialog_recommend">Linear Layout containing the different buttons in Dialog Recommend</string>
+    <string name="scroll_desc_dialog_recommend">Scroll View containing the form for recommends in Dialog Recommend</string>
+    <string name="textview_desc_title_dialog_recommend">Text View for the title in Dialog Recommend</string>
+    <string name="textview_desc_add_position_dialog_recommend">TextView Button for take the position in Dialog Recommend</string>
+    <string name="textview_desc_add_save_dialog_recommend">TextView Button for save and add another recommendation in Dialog Recommend</string>
+    <string name="textview_desc_clear_dialog_recommend">TextView Button for clear the form in Dialog Recommend</string>
+    <string name="edit_text_desc_title_dialog_recommend">EditText for put the title of the recommendation in Dialog Recommend</string>
+    <string name="edit_text_desc_description_dialog_recommend">EditText for put the description the of recommendation in Dialog Recommend</string>
+    <string name="edit_text_desc_phone_dialog_recommend">EditText for put the phone the of recommendation in Dialog Recommend</string>
+    <string name="edit_text_desc_website_dialog_recommend">EditText for put the website the of recommendation in Dialog Recommend</string>
+    <string name="spinner_desc_type_dialog_recommend">Spinner for select the type of recommendation in Dialog Recommend</string>
+
+    <!--Dialog Types-->
+    <string name="linear_desc_dialog_types">Linear Layout Container for Dialog Types</string>
+    <string name="linear_desc_box_dialog_types">Linear Layout containing the check box for select the types in Dialog Types</string>
+    <string name="textview_desc_title_dialog_types">TextView containing the title for Dialog Types</string>
+    <string name="scroll_desc_dialog_types">Scroll view containing the check box types in Dialog Types</string>
+    <string name="radiogroup_desc_dialog_types">Radio Group for select the area selection in Dialog Types</string>
+    <string name="radiobutton_desc_country_dialog_types">Radio Button for select the country user in Dialog Types</string>
+    <string name="radiobutton_desc_all_dialog_types">Radio Button for select all countries types in Dialog Types</string>
+
+    <!--MAIN LISTS-->
+    <!--Fragment Main-->
+    <string name="relative_desc_container_fragment_main">Relative Layout ontainer for Fragment Main</string>
+    <string name="tablayout_desc_main">TabLayout containing the information for the trips and types in Fragment Main</string>
+    <string name="viewpager_desc_main">ViewPager containing the information for the trips and types in Fragment Main</string>
+
+    <!--Fragment Page List-->
+    <string name="frame_desc_page_list">Frame Layout Container for the global page list in Fragment Page List</string>
+    <string name="swipe_desc_page_list">Swipe Refresh component for update the list in Fragment Page List</string>
+    <string name="recycler_desc_page_list">Recycler View used in different parts for show trips and also into the Fragment Page List</string>
+
+    <!--TextView for Empty lists-->
+    <string name="textview_desc_empty">TextView for show a message when the list havent items, used in all the list into the app</string>
+
+    <!--ITEMS LISTS-->
+    <!--Item card types-->
+    <string name="imageview_desc_item_types">ImageView for the item list of types of trip</string>
+
+    <!--Item list countries-->
+    <string name="card_view_desc_item_countries">CardView Container for the item list of countries</string>
+    <string name="relative_desc_container_item_countries">Relative Layout containing the flag, titile and subtitile for an item</string>
+    <string name="imageview_desc_flag_item_countries">ImageView with the flag of the country in item list countries</string>
+    <string name="textview_desc_title_item_countries">TextView containing the title for the items list</string>
+    <string name="textview_desc_subtitle_item_countries">TextView containing the subtitle for the items list</string>
+    <string name="linear_desc_base_countries_item">Linear Layout containing the title and subtitle in Item Countries</string>
+
+    <!--Item list recommend-->
+    <string name="linear_desc_item_recommend">Linear Layout Container for the item in list recommends</string>
+    <string name="textview_desc_title_item_recommend">TextView containing the title for any item recommend</string>
+    <string name="textview_desc_description_item_recommend">TextView containing the description for any item recommend</string>
+    <string name="linear_desc_container_buttons_item_recommend">Linear Layout containing the buttons for contact in item recommend</string>
+    <string name="imagebutton_desc_phone_item_recommend">ImageButton for the phone contact in item recommend</string>
+    <string name="imagebutton_desc_web_item_recommend">ImageButton for the website contact in item recommend</string>
+    <string name="imagebutton_desc_position_item_recommend">ImageButton for the position contact in item recommend</string>
+
+    <!--Item list trips main-->
+    <string name="card_view_desc_item_trip_main">CardView Container for the item list trip main</string>
+    <string name="frame_desc_item_trip_main">Frame Layout Container for the item list trip main</string>
+    <string name="imageview_desc_item_trip_main">ImageView containing the thumbnail for any trip in item trip main</string>
+    <string name="linear_desc_base_item_trip_main">Linear Layout containing the title and flag for any item trip main</string>
+    <string name="linear_desc_votes_item_trip_main">Linear Layout containing the description and rating for any item trip main</string>
+    <string name="textview_desc_title_item_trip_main">TextView containing the title with the country flag in item trip main</string>
+    <string name="textview_desc_description_item_trip_main">TextView containing the description for any item trip main</string>
+    <string name="imageview_desc_favorites_item_trip_main">ImageView containing the icon for favorite voting in any item trip main</string>
+    <string name="textview_desc_votes_item_trip_main">TextView containing the voting for any item trip main</string>
+
+    <!--Item list types main-->
+    <string name="card_view_desc_item_types">CardView Container for item list types main</string>
+    <string name="frame_desc_item_types">Frame Layout Container for item list types main</string>
+    <string name="imageview_desc_item_types_main">ImageView containing the image for any type of tourism in item list types main</string>
+    <string name="linear_desc_base_item_types_main">Linear Layout containing the info about any type of tourism in item types main</string>
+    <string name="textview_desc_title_item_types_main">TextView containing the title for any type of tourism in item types main</string>
+    <string name="textview_desc_number_item_types_main">TextView containing the number of trips for any type of tourism in item types main</string>
+    <string name="imageview_desc_icon_item_types_main">ImageView containing the icon for any type of tourism in item types main</string>
+
+    <!--Item list Widget-->
+    <string name="frame_desc_item_widget">Frame Layout Container for item list Widget</string>
+    <string name="imageview_desc_image_widget">ImageView containing the image for item in Widget</string>
+    <string name="textview_desc_last_item_widget">TextView containing info about the items in Widget</string>
+    <string name="linear_desc_container_base_widget">Linear Layout containing the info about the trip in Widget</string>
+    <string name="linear_desc_title_item_widget">Linear Layout containing the title and flag for the trip in Widget</string>
+    <string name="textview_desc_title_widget">TextView containing the title with the country flag for the trip in Widget</string>
+    <string name="textview_desc_description_widget">TextView containing the description with the country flag for the trip in Widget</string>
+    <string name="linear_desc_votes_widget">Linear Layout containing the rating for the trip in Widget</string>
+    <string name="imageview_desc_favorites_item_widget">ImageView containing the icon for favorite voting in Widget</string>
+    <string name="textview_desc_votes_item_widget">TextView containing the voting for the trip in Widget</string>
+
+    <!--Widget Collection-->
+    <string name="frame_desc_colletion_widget">Frame Layout Container for Collection Widget</string>
+    <string name="textview_desc_title_collection_widget">TextView containing the title for the Collection Widget</string>
+    <string name="recycler_desc_collection_widget">RecyclerView containing the items for the Collection Widget</string>
+
+    <!--Item Map Dialog-->
+    <string name="card_view_desc_item_map">CardView Container for item list map</string>
+    <string name="relative_desc_container_item_map">Relative Layout Container for items map</string>
+    <string name="imageview_desc_icon_item_map">ImageView containing the icon for search in map in item list map</string>
+    <string name="textview_desc_title_item_map">TextView containing the title for the trip in item list map</string>
+    <string name="textview_desc_distance_item_map">TextView containing the distance for the trips in item list map</string>
+
+    <!--CUSTOM MARKER MAP-->
+    <!--Marker Info Window-->
+    <string name="card_view_desc_marker">CardView Container for Marker info window</string>
+    <string name="frame_desc_marker">Frame Layout Container for Marker info window</string>
+    <string name="imageview_desc_iamge_marker">ImageView containing the image for the marker trip selected</string>
+    <string name="linear_desc_base_marker">Linear Layout containing the info about the trip in Marker Info Window</string>
+    <string name="linear_desc_title_marker">Linear Layout containing the title and flag for the trip in Marker Info Window</string>
+    <string name="textview_desc_title_marker">TextView containing the title with the country flag for the trip in Marker Info Window</string>
+    <string name="textview_desc_description_marker">TextView containing the description with the country flag for the trip in Marker Info Window</string>
+    <string name="linear_desc_votes_marker">Linear Layout containing the rating for the trip in Marker Info Window</string>
+    <string name="imageview_desc_icon_fav_marker">ImageView containing the icon for favorite voting in Marker Info Window</string>
+    <string name="textview_desc_votes_marker">TextView containing the voting for the trip in Marker Info Window</string>
+
+    <!--NAV HEADER-->
+    <!--Navigation Drawer Header-->
+    <string name="linear_desc_nav_header">Linear Layout container for the header of the navigation drawer</string>
+    <string name="imageview_desc_user_icon_nav_header">ImageView containing the user photo in navigation drawer header</string>
+    <string name="textview_desc_user_nav_header">TextView containing the user name in navigation drawer header</string>
+
+    <!--CUSTOMS-->
+    <!--Spinner Custom Item-->
+    <string name="textview_desc_item_spinner"></string>
+
+    <!--TABLET LAYOUTS-->
+    <!--App Bar Main-->
+    <string name="coordinator_desc_main_tablet">Coordinator Layout Main, used in different activities as base container in Tablet</string>
+    <string name="appbar_desc_main_tablet">AppBar Main used in different layouts as base appbar in Tablet</string>
+    <string name="toolbar_desc_main_tablet">Main Toolbar used in different layouts in Tablet</string>
+    <string name="linear_desc_main_tablet">Linear Layout Container for the main and detail fragment in Tablet</string>
+    <string name="frame_desc_main_tablet">Frame Layout Main Container for different Fragments/Activity in Tablet</string>
+    <string name="frame_desc_detail_tablet">Frame Layout Detail Container for different Fragments/Activity in Tablet</string>
+    <string name="linear_base_detail_fragment_tablet">Linear Layout Container for detail fragment in Tablet</string>
+    <string name="linear_desc_base_toolbar_tablet">Linear Layout Container for Toolbar adjust in detail fragment in Tablet</string>
+    <string name="view_desc_toolbar_tablet">View for Toolbar adjust in detail fragment in Tablet</string>
+    <string name="linear_desc_container_main_tablet">Linear Layout Container for main fragment in Tablet</string>
+    <string name="view_desc_container_main_tablet">View for Container main for adjust the fragment in Tablet</string>
+
+    <!--Back Info when havent trip-->
+    <string name="linear_desc_no_info_trip">Linear Layout Container for show a message when havent info about a trip</string>
+    <string name="imageview_desc_no_info_trip">ImageView containing the logo when havent info about a trip and in the Splash Activity</string>
+    <string name="textview_desc_no_info_trip">TextView containing a message when havent info about a trip</string>
+    <string name="linear_desc_container_progressbar">Linear Layout containing the spinner loading</string>
+
+</resources>

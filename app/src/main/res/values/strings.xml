@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">TripTop</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Drawer menu text titles-->
+    <string name="item_home">Home</string>
+    <string name="item_countries">Countries</string>
+    <string name="item_addtrip">Add Trip</string>
+    <string name="item_follow">Follow Us</string>
+    <string name="item_favorites">Favorites</string>
+    <string name="item_login">LogIn</string>
+    <string name="item_logout">LogOut</string>
+
+    <!--Tabs main screen-->
+    <string name="tab_lastest">LAST ADDED</string>
+    <string name="tab_rating">TOP TRIPS</string>
+    <string name="tab_types">BY TYPE</string>
+
+    <!--Menu on toolbar-->
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="aroundme">Around Me</string>
+    <string name="routes">Routes</string>
+    <string name="map">Map</string>
+
+    <!--Transitions effects-->
+    <string name="transition_grid_to_detail">DetailFragment</string>
+
+    <string name="width_image_thumb">w154/</string>
+
+    <string name="title_activity_maps">Map</string>
+
+    <!--Text for the Countries section-->
+    <string name="single_trip"> Trip</string>
+    <string name="plural_trips"> Trips</string>
+
+    <!--Dialog Map-->
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="button_gps">ACTIVATE GPS</string>
+    <string name="dialog_info">These are trips available in your country.</string>
+    <string name="km_single">km</string>
+    <string name="km_plural">kms</string>
+    <string name="mts_single">m</string>
+    <string name="mts_plural">mts</string>
+    <string name="no_location">Unable to get the distance, location unavailable.</string>
+    <string name="distance">Distance</string>
+    <string name="title_types">Select Types</string>
+    <string name="title_photo">Select Photo</string>
+    <string name="title_position">Select Position</string>
+    <string name="your_country">Your Country</string>
+    <string name="all_countries">All</string>
+    <string name="title_activity_follow_us">Follow Us</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="tv_register">Do not have an account? Register now</string>
+    <string name="tv_password">Password?</string>
+
+    <!--Service register and login-->
+    <!-- text labels -->
+    <string name="label_name">Username</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_password_confirm">Confirm password</string>
+
+    <!-- button labels -->
+    <string name="button_register">Register</string>
+
+    <!-- warnings -->
+    <string name="warning_name_empty">Name cannot be empty</string>
+    <string name="warning_name_lowercase">Name should start from an uppercase letter</string>
+    <string name="warning_email_empty">Email cannot be empty</string>
+    <string name="warning_email_invalid">Invalid email format</string>
+    <string name="warning_password_empty">Password cannot be empty</string>
+    <string name="warning_passwords_do_not_match">Passwords do not match</string>
+
+    <!-- info messages -->
+    <string name="info_registered">Registered correctly!</string>
+
+    <!-- loading messages -->
+    <string name="loading_empty">Loading…</string>
+    <string name="loading_register">Sending registration request…</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="register">Register</string>
+    <string name="loading_login">Logging in…</string>
+
+    <!-- info messages -->
+    <string name="info_registered_template">Registered. ObjectId: %s</string>
+    <string name="info_registered_success">Registered successfully</string>
+    <string name="info_logged_in">Logged correctly!</string>
+
+    <!-- button labels -->
+    <string name="button_login">Login</string>
+    <string name="button_login_facebook">Login with Facebook</string>
+    <string name="button_login_twitter">Login with Twitter</string>
+
+    <!-- texts -->
+    <string name="register_prompt">Do not have an account? Register now</string>
+    <string name="divider_or">OR</string>
+
+    <string name="loading_trips">Loading trips…</string>
+    <string name="button_load_more">SHOW MORE</string>
+    <string name="login_message">Oops. You need to log in to add a trip.</string>
+    <string name="dialog_around">These are the trips available in your area.</string>
+    <string name="submit_trip">SUBMIT</string>
+    <string name="preview_trip">PREVIEW</string>
+    <string name="recommends">RECOMMENDS</string>
+    <string name="add_title">Title</string>
+    <string name="add_description">Description</string>
+    <string name="gral_info">INFO</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_ok">OK</string>
+
+    <!--Dialog text for photo options-->
+    <string name="info_take_photo_dialog">Sorry. You need to put a title and select the country to take a picture.</string>
+    <string name="success_photo_uploaded">Photo uploaded correctly.</string>
+    <string name="select_position">Select location on the map or search the adress.</string>
+    <string name="warning_error">Oops! Something went wrong, please try again later.</string>
+    <string name="add_recommend">Adds a recommendation</string>
+    <string name="add_new_position">Add Position</string>
+    <string name="add_types">Add Type</string>
+    <string name="add_new_photo">Add Photo</string>
+    <string name="where_sleep">Where sleep</string>
+    <string name="where_eat">Where eat</string>
+    <string name="add_new_route">Add Route</string>
+    <string name="save_add_other">Save and Add</string>
+    <string name="clear_recommend">Clear</string>
+    <string name="add_phone">Phone</string>
+    <string name="add_website">Website</string>
+    <string name="default_rate">0.0</string>
+    <string name="default_bool">false</string>
+    <string name="success_data_uploaded">Information uploaded correctly.</string>
+    <string name="hint_spinner_types">Types</string>
+    <string name="hint_spinner_region">Region</string>
+    <string name="hint_spinner_countries">Country</string>
+    <string name="widget_trip">TripTop</string>
+    <string name="widget_last_added">Last Added in TripTop</string>
+    <string name="action_share">Share</string>
+    <string name="detail_activity">Detail Trip</string>
+
+    <!--Types of tourims-->
+    <string name="tourism_cultural">Cultural</string>
+    <string name="tourism_diversion">Diversion</string>
+    <string name="tourism_nature">Nature</string>
+    <string name="tourism_rural">Rural</string>
+    <string name="tourism_health">Health</string>
+    <string name="tourism_wine">Wine</string>
+    <string name="tourism_religion">Religion</string>
+    <string name="tourism_gastronomic">Gastronomic</string>
+    <string name="tourism_beach">Beach</string>
+    <string name="tourism_mountain">Mountain</string>
+    <string name="tourism_routes">Routes</string>
+    <string name="vote_text_like">Did you like this trip?</string>
+    <string name="ratingbar_text">Give us your vote so that other users can assess it.</string>
+    <string name="tab_info">INFO</string>
+    <string name="tab_slepp">SLEEP</string>
+    <string name="tab_eat">EAT</string>
+    <string name="tab_vote">VOTE</string>
+    <string name="empty_list">No items in this section.</string>
+    <string name="update_votes">Updated votes!</string>
+
+    <!--Network messages-->
+    <string name="problem_network">To do this you need internet access. Please try again later.</string>
+    <string name="first_synch">To use the app, you need connection the first time you start.</string>
+    <string name="check_updates">To check for updates, you need internet access.</string>
+    <string name="activity_types">Types</string>
+    <string name="message_your_voted">Thank you for your vote. You have assigned to this trip score:</string>
+    <string name="search_label">Trips</string>
+    <string name="search_hint">Search Trips</string>
+
+    <!--Widget-->
+    <string name="new_trips_widget">New Trips</string>
+
+    <!--Key No data when idTrip is null-->
+    <string name="no_data">No data</string>
+
+    <!--Not Detail Info for a trip-->
+    <string name="no_detail_info_trip">Sorry, we do not have detailed information for this resource. Try another.</string>
+
+    <!--Sync Adapter message when is updating-->
+    <string name="updating_trips">Updating the Trips! Please, wait.</string>
+
+    <string name="search_empty">Sorry, we have not obtained results.</string>
+
+    <string name="dialog_info_splash">It has detected a problem downloading the information.
+        Please restart the application and check your Internet connection, the connection is required the first time you install the app.</string>
+
+    <!--Permission Location text-->
+    <string name="request_permission_gps">GPS permission allows us to access location data. Please allow in App Settings for additional functionality.</string>
+    <string name="denied_permission_gps">Permission Denied, You cannot access location data.</string>
+    <string name="granted_permission_gps">Permission Granted, Now you can access location data.</string>
+
+    <!--String for Add Trip back button-->
+    <string name="close_without_save_trip">Do you want to exit without saving the trip?</string>
+
+    <!--Null text on edit text-->
+    <string name="empty_field_edit">Field cannot be left blank.</string>
+    <string name="all_fields_info">Please, You need to complete all fields of info section, it is mandatory.</string>
+
+    <!--Values for the map default init-->
+    <string name="gps_setting">We can not determine your position because you do not have network and the GPS is disabled. Do you want to activate the GPS?</string>
+    <string name="no_current_location">We can not determine your position. Please, checked your network or GPS for a better experience.</string>
+    <string name="location_default">40.191005,-4.073065</string>
+    <string name="country_default">es</string>
+    <string name="distance_default">0.0</string>
+
+    <!--Tracker names screens for Analytics-->
+    <string name="home_screen">Home Screen</string>
+    <string name="detail_screen">Detail Screen</string>
+    <string name="map_screen">Map Screen</string>
+    <string name="favorites_screen">Favorites Screen</string>
+    <string name="add_screen">Add Screen</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="register_screen">Register Screen</string>
+    <string name="splash_screen">Splash Screen</string>
+
+    <string name="guest_connection">Connected as a guest</string>
+
+    <!--Actions from Camera-->
+    <string name="action_take_photo">Take Photo</string>
+    <string name="action_gallery">Choose from Library</string>
+    <string name="select_file">Select File</string>
+
+    <!--Errors-->
+    <string name="backend_problem">Something was wrong. Check your internet connection and try again later.</string>
+    <string name="upload_info_warning">This may take a few seconds. Do not despair.</string>
+
+</resources>

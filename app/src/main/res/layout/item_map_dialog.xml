@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewItemList"
+    android:contentDescription="@string/card_view_desc_item_map"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_info_bar"
+        android:contentDescription="@string/relative_desc_container_item_map"
+        android:layoutDirection="locale"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imageview_desc_icon_item_map"
+            android:id="@+id/iv_map"
+            android:src="@drawable/ic_search_map"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/votes_thumbnail"
+            android:textColor="@android:color/black"
+            android:contentDescription="@string/textview_desc_title_item_map"
+            android:textDirection="locale"
+            android:id="@+id/tv_map_trip"
+            android:layout_alignTop="@+id/iv_map"
+            android:layout_alignStart="@+id/tv_distance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_general"
+            android:id="@+id/tv_distance"
+            android:layout_marginStart="@dimen/view_horizontal_margin"
+            android:textColor="@color/color_light_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_map"
+            android:textDirection="locale"
+            android:contentDescription="@string/textview_desc_distance_item_map"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

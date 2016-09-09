@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="columns_grid_portait">2</integer>
+    <integer name="columns_grid_landscape">4</integer>
+
+    <integer name="columns_grid_portrait_hight_density">3</integer>
+    <integer name="columns_grid_landscape_low_density">3</integer>
+
+    <integer name="margin_top_card_header">30</integer>
+    <integer name="translation_card_header">35</integer>
+
+    <integer name="list_fragment_weight">2</integer>
+    <integer name="detail_fragment_weight">3</integer>
+
+    <integer name="width_imageview_list">500</integer>
+    <integer name="height_imageview_list">350</integer>
+
+    <integer name="width_imageview_detail">700</integer>
+    <integer name="height_imageview_detail">480</integer>
+
+    <integer name="number_stars_rating">5</integer>
+
+    <integer name="initial_zoom">6</integer>
+    <integer name="detail_zoom">15</integer>
+
+</resources>

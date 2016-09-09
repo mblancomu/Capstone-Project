@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/linear_desc_add_content_buttons_info"
+    android:layoutDirection="locale"
+    android:orientation="horizontal"
+    android:padding="@dimen/view_horizontal_margin">
+
+    <TextView
+        android:id="@+id/ib_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/textview_desc_button_camera"
+        android:drawableTop="@drawable/ic_item_add_photo"
+        android:gravity="center"
+        android:nextFocusRight="@id/ib_position"
+        android:text="@string/add_new_photo"
+        android:textColor="@color/colorPrimary_text"
+        android:textDirection="locale" />
+
+    <TextView
+        android:id="@+id/ib_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/textview_desc_button_position"
+        android:drawableTop="@drawable/ic_item_add_position"
+        android:gravity="center"
+        android:nextFocusRight="@+id/ib_type"
+        android:text="@string/add_new_position"
+        android:textColor="@color/colorPrimary_text"
+        android:textDirection="locale" />
+
+    <TextView
+        android:id="@+id/ib_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/textview_desc_button_types"
+        android:drawableTop="@drawable/ic_item_add_type"
+        android:gravity="center"
+        android:nextFocusDown="@id/ib_sleep"
+        android:text="@string/add_types"
+        android:textColor="@color/colorPrimary_text"
+        android:textDirection="locale" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Width of items in list-->
+    <dimen name="width_item_list_main_types">280dp</dimen>
+    <dimen name="imagegrid_height">300dp</dimen>
+
+    <!--Global margins for the container-->
+    <dimen name="margins_horizontal_global">240dp</dimen>
+    <dimen name="margins_vertical_global">16dp</dimen>
+
+    <!--Card header detail dimens-->
+    <dimen name="margins_horizontal_header">16dp</dimen>
+    <dimen name="margins_vertical_header">16dp</dimen>
+
+    <!--LOGIN & REGISTER-->
+    <!--Dimens for the forms in login and register-->
+    <dimen name="marginTop_button">64dp</dimen>
+    <dimen name="margins_horizontal_buttons_form">32dp</dimen>
+    <dimen name="margins_vertical_buttons_form">24dp</dimen>
+
+    <!--ADD TRIPS-->
+    <!--Dimens for the components in Add Trip section-->
+    <dimen name="text_add_submit_button">22sp</dimen>
+    <dimen name="margins_horizontal_button_add_submit">8dp</dimen>
+    <dimen name="margins_horizontal_add_spinners">48dp</dimen>
+    <dimen name="height_description_edit_text">150dp</dimen>
+    <dimen name="margin_between_spinners">16dp</dimen>
+
+    <!--Progress Bar dimens-->
+    <dimen name="width_progressbar">100dp</dimen>
+    <dimen name="height_progressbar">100dp</dimen>
+    <dimen name="marginTop_progressbar">30dp</dimen>
+
+    <dimen name="drawable_padding_global">8dp</dimen>
+    <dimen name="height_views_divider">1dp</dimen>
+
+    <!--Cards view values-->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+
+    <dimen name="height_tab_indicator">4dp</dimen>
+
+    <!--Text for Collapsing component-->
+    <dimen name="text_collapsed_state">16sp</dimen>
+    <dimen name="text_expanded_state">24sp</dimen>
+
+    <dimen name="padding_start_collapsing_layout">16dp</dimen>
+
+    <!--Detail screen dimens-->
+    <dimen name="height_image_view_detail">380dp</dimen>
+    <dimen name="app_bar_height_detail">480dp</dimen>
+    <dimen name="height_card_header_detail">180dp</dimen>
+
+    <dimen name="padding_number_types">2dp</dimen>
+
+    <dimen name="margintTop_detail_card_tablet">-96dp</dimen>
+    <dimen name="appbar_height_detail_tablet">128dp</dimen>
+
+</resources>

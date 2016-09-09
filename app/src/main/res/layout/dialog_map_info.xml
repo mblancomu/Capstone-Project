@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/linear_desc_dialog_map"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/country_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/textview_desc_title_dialog_map"
+        android:drawablePadding="@dimen/drawable_padding_global"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:padding="@dimen/view_horizontal_margin"
+        android:textColor="@android:color/white"
+        android:textDirection="locale"
+        android:textSize="@dimen/title_thumbnail" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/textview_desc_description_dialog_map"
+        android:padding="@dimen/view_horizontal_margin"
+        android:text="@string/dialog_around"
+        android:textColor="@android:color/black"
+        android:textDirection="locale" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_trips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_horizontal_margin"
+        android:contentDescription="@string/recycler_desc_dialog_map">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

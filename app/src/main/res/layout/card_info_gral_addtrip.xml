@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewItemList"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/card_view_add_trip_info_gral">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/linear_desc_add_card_info"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextSectionsAddTrip"
+            android:contentDescription="@string/textview_desc_add_section_info"
+            android:text="@string/gral_info" />
+
+        <EditText
+            android:id="@+id/et_add_title"
+            style="@style/EditTextForm"
+            android:contentDescription="@string/edit_text_desc_add_title"
+            android:hint="@string/add_title"
+            android:nextFocusDown="@+id/sp_country" />
+
+        <View
+            style="@style/DividerSections"
+            android:contentDescription="@string/view_desc_divider_add"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margins_horizontal_add_spinners"
+            android:layout_marginStart="@dimen/margins_horizontal_add_spinners"
+            android:contentDescription="@string/linear_desc_add_spinners"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_between_spinners"
+                android:layout_weight="1"
+                android:contentDescription="@string/spinner_desc_add_country"
+                android:nextFocusRight="@+id/sp_region"
+                android:textDirection="locale"></Spinner>
+
+            <Spinner
+                android:id="@+id/sp_region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_between_spinners"
+                android:layout_weight="1"
+                android:contentDescription="@string/spinner_desc_add_region"
+                android:nextFocusDown="@+id/et_add_description"
+                android:textDirection="locale"></Spinner>
+        </LinearLayout>
+
+        <View
+            style="@style/DividerSections"
+            android:contentDescription="@string/view_desc_divider_add">></View>
+
+        <EditText
+            android:id="@+id/et_add_description"
+            style="@style/EditTextDescription"
+            android:contentDescription="@string/edit_text_desc_add_description"
+            android:hint="@string/add_description"
+            android:nextFocusDown="@+id/ib_camera" />
+
+        <View
+            style="@style/DividerSections"
+            android:contentDescription="@string/view_desc_divider_add">></View>
+
+        <include layout="@layout/items_add_gral"></include>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

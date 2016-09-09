@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    style="@style/CardViewItemList"
+    android:contentDescription="@string/card_view_desc_item_types">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/height_views_divider"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/frame_desc_item_types">
+
+        <ImageView
+            android:id="@+id/thumbnail_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/imageview_desc_item_types_main"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tol_countries"
+            android:transitionName="@string/transition_grid_to_detail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/black_trans"
+            android:contentDescription="@string/linear_desc_base_item_types_main"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_info_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/linear_desc_base_item_types_main"
+                android:gravity="center_vertical"
+                android:layoutDirection="locale"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/padding_info_bar">
+
+                <TextView
+                    android:id="@+id/tv_type_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/textview_desc_title_item_types_main"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/title_thumbnail" />
+
+                <TextView
+                    android:id="@+id/tv_number_trips_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/textview_desc_number_item_types_main"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/padding_number_types"
+                    android:textColor="@color/color_light_grey"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/text_description" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_iconType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/imageview_desc_icon_item_types_main"
+                android:src="@drawable/ic_nature" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

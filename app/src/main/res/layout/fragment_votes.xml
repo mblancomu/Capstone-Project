@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/frame_desc_votes">
+
+    <LinearLayout
+        android:id="@+id/container_for_vote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:contentDescription="@string/linear_desc_votes"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/view_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/textview_info_votes"
+            android:gravity="center"
+            android:text="@string/vote_text_like"
+            android:textColor="@color/colorPrimary_text"
+            android:textDirection="locale"
+            android:textSize="@dimen/text_general" />
+
+        <ImageButton
+            android:id="@+id/ib_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/view_horizontal_margin"
+            android:background="@null"
+            android:contentDescription="@string/imagebutton_desc_votes"
+            android:nextFocusDown="@+id/ratingbar_vote"
+            android:src="@drawable/ic_votes"
+            android:textDirection="locale" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margins_horizontal_add_spinners"
+            android:contentDescription="@string/textview_desc_rating_info_votes"
+            android:gravity="center"
+            android:text="@string/ratingbar_text"
+            android:textColor="@color/colorPrimary_text"
+            android:textDirection="locale"
+            android:textSize="@dimen/text_general" />
+
+        <RatingBar
+            android:id="@+id/ratingbar_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/ratingbar_desc_big_votes"
+            android:layoutDirection="locale"
+            android:numStars="@integer/number_stars_rating"
+            android:stepSize="1"
+            android:theme="@style/RatingBar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_with_voted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/linear_desc_voted_votes"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_horizontal_margin"
+            android:layout_marginStart="@dimen/view_horizontal_margin"
+            android:contentDescription="@string/textview_desc_thanks_votes"
+            android:gravity="center"
+            android:text="@string/message_your_voted"
+            android:textColor="@color/colorPrimary_text"
+            android:textDirection="locale" />
+
+        <TextView
+            android:id="@+id/tv_assignated_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margins_horizontal_button_add_submit"
+            android:contentDescription="@string/textview_desc_result_votes"
+            android:textColor="@color/colorAccent"
+            android:textDirection="locale"
+            android:textSize="@dimen/title_thumbnail"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>
