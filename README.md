@@ -10,7 +10,8 @@ API Keys: You'll need to obtain the following API keys in order to successfully 
 The Backendless API Key can be obtained by following the instructions here: https://backendless.com/mobile-developers/ For the Google APIs you need access with your account to: https://console.developers.google.com/apis/dashboard
 ,and put Enable the APIs for Maps and Places for Android. For Analytics you can follow the next link for read more and put your json file and xml tracker file: https://developers.google.com/analytics/devguides/collection/android/v4/
 
-All key data should be inserted into the file app/src/main/res/values/api_keys.xml
+All key data should be inserted into the file app/src/main/res/values/google_maps_key.xml & 
+in main/res/values/backendless_api.xml , also you need the google-services.json for  Analytics.
 
 In this project also is adding the database tables that are use in the backend service, you only should import this information into your environment in Backendless. This files are adding in the folder backend, into the app folder.
 
